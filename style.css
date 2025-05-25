@@ -1,0 +1,121 @@
+/* Global Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #fffaf2; /* Ultra soft cream */
+  color: #2c1b0f;
+  line-height: 1.7;
+  padding-bottom: 60px;
+}
+
+/* Header */
+h1 {
+  background: linear-gradient(90deg, #7a1c00, #a3300c);
+  color: #fff;
+  padding: 35px 20px;
+  text-align: center;
+  font-size: 2.8em;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+/* Layout container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+/* Category List */
+ul#category-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#category-list li {
+  background: #fff;
+  border-left: 6px solid #a3300c;
+  margin-bottom: 15px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul#category-list li:hover {
+  background-color: #fef0e7;
+  transform: translateY(-4px);
+}
+
+ul#category-list li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #7a1c00;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+ul#category-list li a:hover {
+  color: #511100;
+}
+
+/* Quiz Form */
+#quiz-form {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+#quiz-form div {
+  margin-bottom: 25px;
+}
+
+#quiz-form p {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-bottom: 10px;
+  color: #3a1e12;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Button */
+button {
+  display: block;
+  background: linear-gradient(to right, #8b2500, #a3300c);
+  color: white;
+  padding: 14px 35px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  margin: 40px auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: #651700;
+  transform: translateY(-3px);
+}
+
+/* Score Page */
+#score {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #7a1c00;
+  margin-top: 60px;
+}
